@@ -1,0 +1,22 @@
+body{padding-top: 60px; font-family:'Microsoft YaHei UI','Microsoft YaHei','Segoe UI','Lucida Grande',Verdana,Arial,Helvetica,sans-serif;}
+
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+.navbar-inverse .navbar-brand{color:#eee;}
+
+.page-sidebar{position:fixed;top:50px;left:0;width:220px;}
+.page-main{ display: block;margin:0 10px 0 230px;padding:0 15px;}
+
+
+.page-sidebar .nav a{border-bottom:1px solid #DDD;}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,21 @@
+{
+  "name": "bower.json",
+  "version": "0.0.1",
+  "authors": [
+    "lianghua.fu <lianghua.fu@2339.com>"
+  ],
+  "description": "么么直播后台管理",
+  "license": "MIT",
+  "homepage": "http://a.admin.2339.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-ui-router": "~0.2.15"
+  }
+}
