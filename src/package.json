@@ -1,0 +1,19 @@
+{
+  "name": "admin-angular",
+  "version": "1.0.0",
+  "description": "么么直播后台管理",
+  "main": "index.js",
+  "dependencies": {
+    "angular-ui-router": "^0.2.15"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "lianghua.fu@2339.com",
+  "repository":{
+    "type":"git",
+    "url":"git@github.com:flh0909/admin-angular.git"
+  },
+  "license": "ISC"
+}
