@@ -6,23 +6,24 @@ html,body{height:100%;}
 .nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
 .navbar-inverse .navbar-brand{color:#eee;}
 
+/*主框架*/
 .page{min-height:100%;border-left:solid 220px #1d9d74;}
 .page-sidebar{float:left;width:220px;margin-left:-220px;}
 .page-main-wrapper{}
-.page-main{ display: block;background-color: #f00;;padding:0 15px;}
-.page-main-hd{ height: 50px;}
+.page-main{ display: block;;padding:10px 15px 0;}
+.page-main-hd{ }
 .page-main-bd{}
 .page-main-ft{}
 
-
+/*左侧菜单*/
 .sidebar-header{height:50px;font-size:14px; line-height: 50px;color:#fff;padding:0 0 0 15px;}
 .sidebar-header-avatar{ display: inline-block; text-align: center; vertical-align: middle; width:40px;height:40px;border-radius:50%;border:solid 1px #fff; margin-right: 5px;}
 
 .page-sidebar dl i{width:24px;}
 .page-sidebar dt{ display: block;}
 .page-sidebar dt a{ display: block;padding:10px 10px 10px 16px; background-color: #1d9d74;color:#fff;font-size:12px; font-weight: 400;text-decoration: none;}
-.page-sidebar dt.on a,
-.page-sidebar dt a:hover{ text-decoration: none;/*border-left:solid 2px #ff0;padding-left:14px; *//*background-color: #0E8160;*/}
+.page-sidebar dt.on a{text-decoration: none;background-color: #0E8160;}
+.page-sidebar dt a:hover{ text-decoration: none;border-left:solid 1px #ff0;padding-left:15px; background-color: #0E8160;}
 .page-sidebar dt .fa-angle-left{width:24px;height:24px; line-height: 24px; text-align: center;margin-top:-4px;transition: transform .2s;}
 .page-sidebar dt.on .fa-angle-left{-webkit-transform: rotate(-90deg);-ms-transform: rotate(-90deg);-o-transform: rotate(-90deg);transform: rotate(-90deg);}
 .page-sidebar dd{ /*display: none;*/ background-color: #0E8160;}
@@ -39,5 +40,6 @@ html,body{height:100%;}
 
 
 
-
+.table-block{width:100%;max-width:100%;}
+.table-inline{width:auto;max-width: none;}
 

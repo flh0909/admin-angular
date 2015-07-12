@@ -12,7 +12,7 @@ angular.module('mm.sidebar', [])
             //transclude:true,
             controller: ['$scope', function ($scope) {
                 var menus = $scope.menus = [
-                    {name: 'Dashboard',key: 'yibiaoban',icon:'glyphicon glyphicon-dashboard',  subitems: []},
+                    {name: 'Dashboard',key: 'yibiaoban',icon:'fa fa-dashboard',  subitems: []},
                     {
                         name: '日常运营', key: 'website',icon:'glyphicon glyphicon-book', subitems: [
                         {name: '海报管理', key: 'poster'},
@@ -36,4 +36,16 @@ angular.module('mm.sidebar', [])
                 }
             }]
         }
-    });
+    })
+    .directive('submenu', function () {
+        return {
+            restrict:'EA',
+            require:'^sidebarMenu',
+            templateUrl:'views/component/sidebar-submenu.html',
+            scope:{},
+            controller: ['$scope', function ($scope) {
+
+            }]
+        };
+    })
+;

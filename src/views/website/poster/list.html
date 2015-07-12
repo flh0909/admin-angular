@@ -1,8 +1,27 @@
-<div>
-    <pagination total-items="res.count" ng-model="currentPage" ng-change="pageChanged()"></pagination>
+<div class="page-main-hd">
+    <ul class="nav nav-tabs row">
+        <li role="presentation" class="active"><a href="#">Home</a></li>
+        <li role="presentation"><a href="#">Profile</a></li>
+        <li role="presentation"><a href="#">Messages</a></li>
+    </ul>
+    <div class="row">
+    <form class="form-inline">
+        <div class="form-group form-group-sm">
+            <label>名称</label>
+            <input type="text" class="form-control" placeholder="Jane Doe">
+        </div>
+        <div class="form-group form-group-sm">
+            <label>类型</label>
+            <input type="text" class="form-control" placeholder="jane.doe@example.com">
+        </div>
+        <button type="submit" class="btn btn-default btn-sm">查询</button>
+    </form>
+    </div>
+
 </div>
 
-<table class="table" poster-list>
+<div class="page-main-bd">
+<table class="table table-inline" poster-list>
     <thead>
     <tr>
         <th>序号</th>
@@ -26,5 +45,7 @@
     </tr>
     </tbody>
 </table>
-
-
+</div>
+<div class="page-main-ft">
+    <pagination total-items="res.count" ng-model="currentPage" ng-change="pageChanged()" class="pagination-sm"></pagination>
+</div>
