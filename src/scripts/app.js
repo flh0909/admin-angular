@@ -7,8 +7,11 @@
 
 
 
-var app = angular.module('memeApp', ['mmRouter', 'ui.bootstrap', 'ui.bootstrap.config', 'mmController', 'mmDirective', 'mmFilter', 'ui.router']);
+var app = angular.module('memeApp', ['mmRouter', 'ui.bootstrap', 'ui.bootstrap.config', 'mmController', 'mmDirective', 'mmFilter', 'ui.router','mm.sidebar']);
 
+app.controller('pageCtrl',['$scope', function ($scope) {
+    $scope.isLogin=false;
+}]);
 
 app.config(['$locationProvider', function ($locationProvider) {
     $locationProvider.html5Mode(true).hashPrefix('!');

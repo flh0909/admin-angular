@@ -1,0 +1,16 @@
+<div class="page-sidebar">
+    <div class="sidebar-header">
+        <span class="sidebar-header-avatar"><i class="fa fa-user fa-2x"></i></span><span>哈哈vs嘻嘻</span>
+    </div>
+    <dl ng-repeat="item in menus">
+        <dt ng-class="{'on':item.actived}"><a href="javascript:;" ng-click=select(item)><i class="{{item.icon}}"></i>{{item.name}}<i
+                class="fa fa-angle-left pull-right"></i></a></dt>
+        <dd ng-show="item.actived" ng-if="item.subitems">
+
+            <ul ng-repeat="subitem in item.subitems">
+                <li><a ui-sref="{{item.key+'.'+subitem.key}}"><i class="fa fa-circle-thin"></i><span>{{subitem.name}}</span></a></li>
+            </ul>
+
+        </dd>
+    </dl>
+</div>

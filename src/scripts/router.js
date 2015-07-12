@@ -18,7 +18,8 @@ angular.module('mmRouter',['ui.router'])
                     'nav@index':{
                         templateUrl:'views/nav/website.html'
                     }
-                }
+                }//,
+                //controller:''
             })
 
             .state('website',{

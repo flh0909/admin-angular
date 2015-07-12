@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/plugins/bootstrap-3.3.4/dist/css/bootstrap-theme.css"/>
     <link rel="stylesheet" href="/plugins/font-awesome-4.3.0/css/font-awesome.min.css"/>
 
+    <link rel="stylesheet" href="/styles/normalize.css"/>
     <link rel="stylesheet" href="/styles/main.css"/>
 
     <script src="/plugins/jquery-1.11.3/jquery-1.11.3.min.js"></script>
@@ -31,15 +32,16 @@
 
     <script src="/scripts/service/service.js"></script>
     <script src="/scripts/directives/poster.js"></script>
+    <script src="/scripts/directives/sidebar.js"></script>
 
     <script src="/scripts/router.js"></script>
     <script src="/scripts/ui-bootstrap-config.js"></script>
     <script src="/scripts/app.js"></script>
 </head>
 <body>
-<div id="page">
+<div id="page" class="page fix" ng-controller="pageCtrl">
     <!--导航-->
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <div style="display: none;" class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -64,9 +66,15 @@
             </div>
         </div>
     </div>
-    <div ng-controller="mainCtrl">{{ title }}ssss</div>
+
+    <!--<div class="page-sidebar" ng-include="'views/menu.html'"></div>-->
+    <sidebar-menu></sidebar-menu>
+
+
     <!--内容-->
-    <div ui-view></div>
+    <div class="page-main-wrapper">
+        <div ui-view></div>
+    </div>
     <!--<div class="page-sidebar" ui-view="nav"></div>
     <div class="page-main" ui-view="main"></div>-->
     <!--<div class="page-main" ng-include="pageView"></div>-->
